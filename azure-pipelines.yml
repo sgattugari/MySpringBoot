@@ -22,3 +22,7 @@ steps:
   workingDirectory: ./lab-spring-boot
 - bash: docker build -t testaks:latest .  # add options to this command to meet your needs
   workingDirectory: ./lab-spring-boot
+- bash: docker login firstaksregistry -u sgattugari@gmail.com -p Ahan2019!!
+  workingDirectory: ./lab-spring-boot
+- bash: docker push testaks:latest
+  workingDirectory: ./lab-spring-boot
