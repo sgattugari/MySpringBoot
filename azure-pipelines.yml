@@ -19,3 +19,4 @@ steps:
   displayName: 'Run a multi-line script'
 - script: cd
 - bash: mvn install
+  workingDirectory: $(Build.SourceDirectory)/lab-spring-boot
