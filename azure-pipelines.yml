@@ -20,9 +20,9 @@ steps:
 - script: dir
 - bash: mvn install
   workingDirectory: ./lab-spring-boot
-- bash: docker build -t testaks:latest .  # add options to this command to meet your needs
+- bash: docker build -t secondaks.azurecr.io/testaks:latest .  # add options to this command to meet your needs
   workingDirectory: ./lab-spring-boot
 - bash: docker login secondaks.azurecr.io -u secondaks -p $(containerPwd)
   workingDirectory: ./lab-spring-boot
-- bash: sudo docker push testaks
+- bash: sudo docker push secondaks.azurecr.io/testaks:latest
   workingDirectory: ./lab-spring-boot
