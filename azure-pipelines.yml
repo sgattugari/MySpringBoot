@@ -24,5 +24,5 @@ steps:
   workingDirectory: ./lab-spring-boot
 - bash: docker login secondaks.azurecr.io -u secondaks -p $(containerPwd)
   workingDirectory: ./lab-spring-boot
-- bash: docker push testaks
+- bash: sudo docker push testaks
   workingDirectory: ./lab-spring-boot
