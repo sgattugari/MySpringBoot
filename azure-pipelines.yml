@@ -22,7 +22,7 @@ steps:
   workingDirectory: ./lab-spring-boot
 - bash: docker build -t testaks:latest .  # add options to this command to meet your needs
   workingDirectory: ./lab-spring-boot
-- bash: docker login firstaksregistry
+- bash: docker login secondaks.azurecr.io -u secondaks  -p $(containerPwd)
   workingDirectory: ./lab-spring-boot
 - bash: docker push testaks:latest
   workingDirectory: ./lab-spring-boot
