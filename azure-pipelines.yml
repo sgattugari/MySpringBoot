@@ -19,5 +19,6 @@ steps:
   displayName: 'Run a multi-line script'
 - script: dir
 - bash: mvn install
-- bash: docker build -t testaks .  # add options to this command to meet your needs
+  workingDirectory: ./lab-spring-boot
+- bash: docker build -t testaks:latest .  # add options to this command to meet your needs
   workingDirectory: ./lab-spring-boot
