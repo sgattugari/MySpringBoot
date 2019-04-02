@@ -1,0 +1,7 @@
+.DS_Store
+.idea/
+target/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+.gradle/
+build/

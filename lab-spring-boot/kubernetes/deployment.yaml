@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: myspringboot-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: myspringboot
+    spec:
+      containers:
+      - name: myspringboot
+        image: 961578000206.dkr.ecr.us-west-2.amazonaws.com/myspringboot:v0.0.2
+        ports:
+        - containerPort: 8081

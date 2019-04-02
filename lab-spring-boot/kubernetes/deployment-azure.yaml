@@ -1,0 +1,17 @@
+    
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: myspringboot-deployment
+spec:
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        app: myspringboot
+    spec:
+      containers:
+      - name: myspringboot
+        image: #(docker_image)
+        ports:
+        - containerPort: 8081
