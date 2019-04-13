@@ -12,6 +12,6 @@ spec:
     spec:
       containers:
       - name: myspringboot
-        image: #(docker_image)
+        image: secondaks.azurecr.io/testaks:latest
         ports:
         - containerPort: 8081
