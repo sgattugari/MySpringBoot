@@ -6,7 +6,7 @@ metadata:
     kubernetes.io/ingress.class: addon-http-application-routing
 spec:
   rules:
-  - host: myspringboot-service.#(DNS_NAME)
+  - host: myspringboot-service.kubepoc-dns-5597046f.hcp.centralus.azmk8s.io
     http:
       paths:
       - backend:
